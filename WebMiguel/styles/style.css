@@ -1,0 +1,201 @@
+* {
+    font-family: 'Muli', sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: painting;
+    src: url(../fonts/ProximaNovaBold.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    --main-text-color: rgb(5, 5, 5);
+    --secondary-text-color: rgb(151, 151, 151);
+}
+
+
+.clearfix:after {
+    content:"";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+.navbar {
+    background-color: var(--main-text-color);
+    width: 100%;
+    position: fixed;
+    top: 91%;
+    z-index: 1;
+}
+
+.botonfoto {
+    width: 100%;
+    height: 100%;
+} 
+
+.navbar > .navbar-list {
+    height: 1080px; //altura//
+    list-style-type: none;
+    margin: 0;
+    float: right;
+    font-size: 0;
+}
+
+.navbar > .navbar-list > .navbar-item {
+    display: inline;
+    font-size: 16px;
+}
+
+
+.navbar > .navbar-list > .navbar-item a {
+    padding: 20px;
+    text-decoration: none;
+    color: grey;
+    display: inline-block;
+    transition: all 0.5s linear;
+}
+
+.navbar > .navbar-list > .navbar-item.active a {
+    color: var(--main-text-color);
+    background-color: var(--secondary-text-color);
+}
+
+.navbar > .navbar-list > .navbar-item a:hover {
+    color: var(--main-text-color);
+    background-color: var(--secondary-text-color);
+}
+
+
+.header > .title-img {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../images/portada.jpg);
+    height: 100vh;
+    transition: background-size 0.5s;
+}
+
+header > .title-img:hover {
+    background-size: 115% 115%;
+}
+
+header > .title {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(253, 253, 253);
+    font-family: painting;
+    z-index: 1;
+}
+
+header > .title-cite {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(82, 82, 82);
+    font-family: painting;
+    opacity: 0;
+    animation: subtitleAnimation 2.5s forwards;
+    animation-delay: 0.2s;
+}
+
+header > .title-cite > .title-footer {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(121, 121, 121);
+    font-family: painting;
+    opacity: 0.9;
+}
+
+.section-container {
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+.section-reverse {
+    background-color: rgb(2, 2, 2);
+    color: var(--main-text-color);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.paint-member-photo img {
+    height: 500px;
+    max-width: 150%;
+    margin-left: 0px;
+}
+
+.scal:hover {
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.2s;
+}
+
+
+.sketch-img {
+    max-width: 280%;
+    height: 500px;
+}
+
+.footer {
+    background-color: rgb(53, 33, 33);
+    color: var(--main-text-color);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    position: absolute;
+    top: 83%;
+    width: 66%;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.form {
+    padding: 0 20px;
+}
+
+.form .form-row {
+    padding: 10px;
+}
+
+.perfil-item img {
+    max-width: 200%;
+    height: 280px;
+}
+    
+.no {
+    opacity: 0; 
+}
+
+.vincu img {
+    margin-left: 220px;
+    
+}
+
+
+@keyframes subtitleAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}

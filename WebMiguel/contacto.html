@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/grid.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="index.html">MIGUEL PIQUERAS</a>
+            </li>
+            <li class="navbar-item">
+                <a href="pintura.html">Pintura</a>
+            </li>
+            <li class="navbar-item">
+                <a href="cuaderno de campo.html">Cuaderno de campo</a>
+            </li>
+            <li class="navbar-item">
+                <a href="quien-soy.html">Quien soy</a>
+            </li>
+            <li class="navbar-item">
+                <a href="statement.html">Statement</a>
+            </li>
+            <li class="navbar-item active">
+                <a href="contacto.html">Contacto</a>
+            </li>
+            </ul>
+    </nav>
+
+    <main class="container">
+        <section class="contact section-container">
+            <div class="row">
+                <div class="col-10">
+                    <div class="form">
+                        <form name="contacto" method="get">
+                            <div class="form-row">
+                                <h2>Contacto</h2>
+                                <!--nombre y apellido-->
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                            </div>
+                            <div class="form-row">
+                                <!--email-->
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="name@company.com" 
+                                pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+                                
+                            </div>
+                            <div class="form-row">
+                                <!--opciones-->
+                                <div>Donde me conociste:</div>
+                                <label for="tipo_mision_1">Internet</label>
+                                <input type="radio" id="tipo_mision_1" name="tipo_mision" value="Rescate" required>
+
+                                <label for="tipo_mision_2">Redes sociales</label>
+                                <input type="radio" id="tipo_mision_2" name="tipo_mision" value="Ajuste de cuentas" required>
+
+                                <label for="tipo_mision_3">Exposición</label>
+                                <input type="radio" id="tipo_mision_3" name="tipo_mision" value="Disparos y explosivos" required>
+
+                                <label for="tipo_mision_3">Otros</label>
+                                <input type="radio" id="tipo_mision_3" name="tipo_mision" value="Disparos y explosivos" required>
+                            </div>
+                            <div class="form-row">
+                                <!--número-->
+                                <label for="teléfono">Número de contacto:</label>
+                                <input type="" id="" name="">
+                            </div>
+                            <div class="form-row">
+                                    <!--fecha-->
+                                    <label for="fecha"></label>
+                                    <textarea name="comentarios" rows="8" cols="42" required>Escribe aquí tus comentarios</textarea>
+                            </div>
+                            <div class="form-row">
+                                <!--botón enviar-->
+                                <!-- Para poder meter cosas ahí dentro no puede ser 
+                                    input. Tiene que ser button-->
+                                    <button type="submit" id="enviar" onclick="parent.location='mailto:piquerasmiguel@gmail.com">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="copyright">
+                        <footer>
+                                Todas las imágenes y el contenido de este sitio web tienen derechos de autor. Cualquier uso o reproducción en cualquier forma sin permiso está prohibido. (Miguel Piqueras &copy; 2017)
+                        </footer>
+                    </div>
+            </div>
+        </section>
+
+        <section>
+            
+        </section>
+    </main>
+</body>
+</html>
